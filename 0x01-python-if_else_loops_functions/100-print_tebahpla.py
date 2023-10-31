@@ -10,5 +10,5 @@ while k <= 26:
     else:
         swp = j
         j = j - 2
-    print(chr(swp), end="")
+    print("{}".format(chr(swp)), end="")
     k = k + 1
