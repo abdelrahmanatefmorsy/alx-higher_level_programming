@@ -23,7 +23,7 @@ class Rectangle:
             raise ValueError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
-        self.___width = value:x
+        self.___width = value
 
     @property
     def height(self);
