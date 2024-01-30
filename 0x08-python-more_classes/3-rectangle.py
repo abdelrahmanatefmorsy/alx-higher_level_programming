@@ -52,25 +52,25 @@ class Rectangle:
 
 	def perimeter(self):
 		""" Returns rectangle perimiter"""
-		if self.__width is 0 or self.__height is 0:
-			return 0
-		return self.__width * 2 + self.__height * 2
+	    if self.__width is 0 or self.__height is 0:
+		return 0
+	return self.__width * 2 + self.__height * 2
 
-	def __str__(self):
-		""" Return the rectangle with symbol
-		"""
-		if self.__width is 0 or self.__height is 0:
-			return ""
-		return ("\n".join(["".join([str(self.print_symbol)
-				for i in range(self.__width)]) for j in range(self.__height)]))
+    def __str__(self):
+        """ Return the rectangle with symbol
+	"""
+	if self.__width is 0 or self.__height is 0:
+	    return ""
+	return ("\n".join(["".join([str(self.print_symbol)
+	    for i in range(self.__width)]) for j in range(self.__height)]))
 
-	def __repr__(self):
-		""" repr
-		"""
-		return "Rectangle({}, {})".format(self.__width, self.__height)
+    def __repr__(self):
+        """ repr
+        """
+        return "Rectangle({}, {})".format(self.__width, self.__height)
 
-	def __del__(self):
-		""" deleted
-		"""
-		type(self).number_of_instances -= 1
-		print("Bye rectangle...")
+    def __del__(self):
+    """ deleted
+    """
+    type(self).number_of_instances -= 1
+    print("Bye rectangle...")
