@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ module"""
 
-
+if __name__ == "__main__":
     def pascal_triangle(n):
         """ return list """
         mylist = []
