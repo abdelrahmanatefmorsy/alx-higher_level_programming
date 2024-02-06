@@ -9,3 +9,4 @@ def read_file(filename=""):
         """ print file """
 
         print(file.read())
+        print()
