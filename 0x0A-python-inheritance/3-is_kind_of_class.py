@@ -5,4 +5,4 @@
 def is_kind_of_class(obj, a_class):
     """ Return 1 or 0"""
 
-    return isinstance(x, int)
+    return isinstance(obj, a_class)
