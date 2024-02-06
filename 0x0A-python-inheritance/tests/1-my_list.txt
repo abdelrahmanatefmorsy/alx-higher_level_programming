@@ -1,0 +1,12 @@
+>>> MyList = __import__('1-my_list').MyList
+
+>>> new = MyList()
+>>> isinstance(new, list)
+True
+>>> new.print_sorted()
+[]
+>>> new.append(10)
+>>> new.append(0)
+>>> new.append(0)
+>>> new.print_sorted()
+[0, 0, 10]
