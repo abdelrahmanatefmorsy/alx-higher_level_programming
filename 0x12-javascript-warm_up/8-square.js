@@ -1,6 +1,6 @@
 #!/usr/bin/node
 let myVar = process.argv[2];
-if (myVar === undefined) { console.log('Missing size'); } else {
+if (isNaN(myVar)) { console.log('Missing size'); } else {
   let strr = '';
   let i = 0;
   while (i < myVar) {
