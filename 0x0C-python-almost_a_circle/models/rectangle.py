@@ -35,6 +35,25 @@ class Rectangle(Base):
         self.validate_integer(self,"height",height,False)
         self.__height = height
 
+    @property
+    def x(self):
+        '''x of this rectangle.'''
+        return self.__x
+
+    @x.setter
+    def x(self, value):
+        self.validate_integer("x", value)
+        self.__x = value
+    @property
+    def y(self):
+        '''y of this rectangle.'''
+        return self.__y
+
+    @y.setter
+    def y(self, value):
+        self.validate_integer("y", value)
+        self.__y = value
+
     def validate_integer(self, name, value, eq=True):
         '''Method for validating the value.'''
         if type(value) != int:
