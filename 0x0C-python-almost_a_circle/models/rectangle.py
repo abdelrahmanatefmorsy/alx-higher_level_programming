@@ -80,13 +80,13 @@ class Rectangle(Base):
     
     def update(self, *args):
         """update"""
-        if args[0] is not None:
+        if len(args)>=1 and args[0] is not None:
             self.id = args[0]
-        if args[1] is not None:
+        if len(args)>=2 and args[1] is not None:
             self.__width = args[1]
-        if args[2] is not None:
+        if len(args)>=3 and args[2] is not None:
             self.__height = args[2]
-        if args[3] is not None:
+        if len(args)>=4 and  args[3] is not None:
             self.__x = args[3]
-        if args[4] is not None:
+        if len(args)>=5 and args[4] is not None:
             self.__y = args[4]
