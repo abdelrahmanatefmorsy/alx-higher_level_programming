@@ -79,8 +79,14 @@ class Rectangle(Base):
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x, self.__y, self.__width, self.__height)
     
     def update(self, *args):
-        self.id = args[0]
-        self.__width = args[1]
-        self.__height = args[2]
-        self.__x = args[3]
-        self.__y = args[4]
+        """update"""
+        if args[0] is not None:
+            self.id = args[0]
+        if args[1] is not None:
+            self.__width = args[1]
+        if args[2] is not None:
+            self.__height = args[2]
+        if args[3] is not None:
+            self.__x = args[3]
+        if args[4] is not None:
+            self.__y = args[4]
