@@ -26,13 +26,13 @@ class Rectangle(Base):
     @width.setter
     def width(self, width):
         """setter"""
-        self.validate_integer(self,"width",width,False)
+        self.validate_integer("width",width,False)
         self.__width = width
 
     @height.setter
     def height(self, height):
         """setter"""
-        self.validate_integer(self,"height",height,False)
+        self.validate_integer("height",height,False)
         self.__height = height
 
     @property
@@ -42,6 +42,7 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, value):
+        """x of rec"""
         self.validate_integer("x", value)
         self.__x = value
     @property
@@ -64,4 +65,5 @@ class Rectangle(Base):
             raise ValueError("{} must be > 0".format(name))
     
     def area(self):
+        """return  area """
         return self.__width * self.__height
